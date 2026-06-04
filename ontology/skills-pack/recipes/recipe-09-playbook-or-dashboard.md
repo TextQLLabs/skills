@@ -31,7 +31,7 @@ Ask me:
 
 ### Step 3P - The mission statement
 
-Every playbook starts with a `playbook-mission-final-v2.md` that answers:
+Every playbook starts with a `playbook-mission.md` that answers:
 
 1. **Purpose**: what business question this answers
 2. **Audience**: who reads it and what decision it informs
@@ -49,7 +49,7 @@ If the playbook involves code (queries, transformations, visualizations), recomm
 
 ```
 playbooks/<playbook-name>/
-  playbook-mission-final-v2.md      <- the mission statement
+  playbook-mission.md      <- the mission statement
   REFERENCES.md            <- cross-reference to underlying queries/APIs
   queries.py               <- (optional) extracted SQL/data fetching
   analysis.py              <- (optional) transformations and calculations
@@ -89,7 +89,7 @@ Add or update entries in the relevant nav table(s) so this slice becomes discove
 - If this slice is **org-wide** (every user should be able to reach it), add a row in `shared/ROUTING.md`.
 - If this slice is **team-scoped** (only one team's users should reach it), add a row in that team's `<team>/ROUTING.md`.
 - If this slice is **connector-scoped** (only loads when the connector is active), add it to the connector's nav table.
-- If a target nav table does not exist yet, this is a signal to run `recipe-01-nav-tables-final-v2.md` after this one.
+- If a target nav table does not exist yet, this is a signal to run `recipe-01-nav-tables.md` after this one.
 
 The added rows should be `trigger phrase -> path/to/file.md` entries, not prose definitions.
 
@@ -164,7 +164,7 @@ Add or update entries in the relevant nav table(s) so this slice becomes discove
 - If this slice is **org-wide** (every user should be able to reach it), add a row in `shared/ROUTING.md`.
 - If this slice is **team-scoped** (only one team's users should reach it), add a row in that team's `<team>/ROUTING.md`.
 - If this slice is **connector-scoped** (only loads when the connector is active), add it to the connector's nav table.
-- If a target nav table does not exist yet, this is a signal to run `recipe-01-nav-tables-final-v2.md` after this one.
+- If a target nav table does not exist yet, this is a signal to run `recipe-01-nav-tables.md` after this one.
 
 The added rows should be `trigger phrase -> path/to/file.md` entries, not prose definitions.
 

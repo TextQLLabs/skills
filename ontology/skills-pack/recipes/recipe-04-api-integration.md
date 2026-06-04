@@ -81,7 +81,7 @@ apis/<service_name>/
 ```
 
 For each, point me to:
-- `templates/api-readme-final-v2.md` for the README
+- `templates/api-readme.md` for the README
 
 ## Step 7 - Inside-the-file structure
 

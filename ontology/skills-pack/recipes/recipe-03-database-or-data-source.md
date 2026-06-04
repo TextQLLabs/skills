@@ -176,7 +176,7 @@ Add or update entries in the relevant nav table(s) so this slice becomes discove
 - If this slice is **org-wide** (every user should be able to reach it), add a row in `shared/ROUTING.md`.
 - If this slice is **team-scoped** (only one team's users should reach it), add a row in that team's `<team>/ROUTING.md`.
 - If this slice is **connector-scoped** (only loads when the connector is active), add it to the connector's nav table.
-- If a target nav table does not exist yet, this is a signal to run `recipe-01-nav-tables-final-v2.md` after this one.
+- If a target nav table does not exist yet, this is a signal to run `recipe-01-nav-tables.md` after this one.
 
 The added rows should be `trigger phrase -> path/to/file.md` entries, not prose definitions.
 

@@ -28,30 +28,30 @@ Because everything lives in files and folders, Ana navigates it three ways: by k
 ## How this kit is organized
 
 ```
-00-START-HERE-ontology-building-guide-final-v2.md   <- you are here
+00-START-HERE-ontology-building-guide.md   <- you are here
 recipes/
-  recipe-00-scoping-conversation-final-v2.md        <- start here in chat
-  recipe-01-nav-tables-final-v2.md           <- the master nav for the repo
-  recipe-02-folder-structure-final-v2.md
-  recipe-03-database-or-data-source-final-v2.md
-  recipe-04-api-integration-final-v2.md
-  recipe-05-workflow-doc-final-v2.md
-  recipe-06-business-context-doc-final-v2.md        <- canonical definitions
-  recipe-07-personal-context-final-v2.md
-  recipe-08-team-or-functional-area-final-v2.md
-  recipe-09-playbook-or-dashboard-final-v2.md
-  recipe-10-file-anatomy-template-final-v2.md
+  recipe-00-scoping-conversation.md        <- start here in chat
+  recipe-01-nav-tables.md           <- the master nav for the repo
+  recipe-02-folder-structure.md
+  recipe-03-database-or-data-source.md
+  recipe-04-api-integration.md
+  recipe-05-workflow-doc.md
+  recipe-06-business-context-doc.md        <- canonical definitions
+  recipe-07-personal-context.md
+  recipe-08-team-or-functional-area.md
+  recipe-09-playbook-or-dashboard.md
+  recipe-10-file-anatomy-template.md
 templates/
-  folder-readme-final-v2.md
-  routing-nav-table-final-v2.md
-  database-readme-final-v2.md
-  table-doc-final-v2.md
-  query-catalog-final-v2.md
-  api-readme-final-v2.md
-  workflow-doc-final-v2.md
-  business-context-doc-final-v2.md
-  personal-context-final-v2.md
-  playbook-mission-final-v2.md
+  folder-readme.md
+  routing-nav-table.md
+  database-readme.md
+  table-doc.md
+  query-catalog.md
+  api-readme.md
+  workflow-doc.md
+  business-context-doc.md
+  personal-context.md
+  playbook-mission.md
 ```
 
 **Recipes** are prompts. You drop the contents of one into chat and Ana runs a guided session for that slice of the ontology.
@@ -115,15 +115,15 @@ Resist the urge to build everything at once. Pick one:
 
 | If you have... | Start with... |
 |---|---|
-| One database your team queries every day | `recipe-03-database-or-data-source-final-v2.md` for that database |
-| One API integration your team relies on | `recipe-04-api-integration-final-v2.md` for that API |
-| A workflow that gets explained over and over in Slack | `recipe-05-workflow-doc-final-v2.md` for that workflow |
-| A term people argue over the definition of | `recipe-06-business-context-doc-final-v2.md` for that term |
-| Nothing yet, just exploring | `recipe-00-scoping-conversation-final-v2.md` |
+| One database your team queries every day | `recipe-03-database-or-data-source.md` for that database |
+| One API integration your team relies on | `recipe-04-api-integration.md` for that API |
+| A workflow that gets explained over and over in Slack | `recipe-05-workflow-doc.md` for that workflow |
+| A term people argue over the definition of | `recipe-06-business-context-doc.md` for that term |
+| Nothing yet, just exploring | `recipe-00-scoping-conversation.md` |
 
-Once 3-4 slices exist, build the **root routing file** (`recipe-01-nav-tables-final-v2.md`). This is your repo's nav.
+Once 3-4 slices exist, build the **root routing file** (`recipe-01-nav-tables.md`). This is your repo's nav.
 
-Once you have ~10-15 files, decide whether to introduce **folder structure** beyond flat (`recipe-02-folder-structure-final-v2.md`).
+Once you have ~10-15 files, decide whether to introduce **folder structure** beyond flat (`recipe-02-folder-structure.md`).
 
 ---
 

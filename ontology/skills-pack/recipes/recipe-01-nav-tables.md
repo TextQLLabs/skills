@@ -63,7 +63,7 @@ I will give you the rough list. You group similar questions together and propose
 
 ## Step 4 - Draft each nav table
 
-Use `templates/routing-nav-table-final-v2.md` as the starting skeleton for each nav table you draft. It already has:
+Use `templates/routing-nav-table.md` as the starting skeleton for each nav table you draft. It already has:
 
 - The scope header at the top
 - A reminder that auto-attach must be configured by hand in the UI

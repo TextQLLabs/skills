@@ -55,7 +55,7 @@ Walk me through the standard layout. Adapt as needed - not every team needs ever
   data_quality.md        <- if this team owns a data set with quality issues
 ```
 
-`README.md` orients a human browsing the folder. `ROUTING.md` is what Ana auto-loads at the start of every chat where the user has the team's role. See the start-here guide's Rule 3 for the full mechanic, and recipe-01 (`recipe-01-nav-tables-final-v2.md`) for how to draft the ROUTING.md content.
+`README.md` orients a human browsing the folder. `ROUTING.md` is what Ana auto-loads at the start of every chat where the user has the team's role. See the start-here guide's Rule 3 for the full mechanic, and recipe-01 (`recipe-01-nav-tables.md`) for how to draft the ROUTING.md content.
 
 ## Step 4 - The hub README and ROUTING.md
 
@@ -88,13 +88,13 @@ This is what Ana loads at the start of every chat where the user has this team's
 2. **Trigger -> file routing tables** for the top 20-30 questions a user with this role would ask. Group by area (one mini-table for context docs, one for workflows, etc.).
 3. **No always-on rules** - those live in `shared/ROUTING.md` only and are inherited.
 
-Draft each ROUTING.md by working through `recipe-01-nav-tables-final-v2.md` once per team hub, or do it inline here as a single step if the topology is small. Either way, do not skip producing the ROUTING.md - without it, the hub's content is not auto-discoverable for the role.
+Draft each ROUTING.md by working through `recipe-01-nav-tables.md` once per team hub, or do it inline here as a single step if the topology is small. Either way, do not skip producing the ROUTING.md - without it, the hub's content is not auto-discoverable for the role.
 
 > **Manual UI step**: As noted in the start-here guide, Ana cannot bind a ROUTING.md to its role. An admin has to open the TextQL app UI and configure the auto-attach for `<team_name>/ROUTING.md` against the team's role(s) before the routing takes effect.
 
 ## Step 5 - The context/ folder
 
-This holds "what does X mean" docs. One file per concept. Each follows the business context template (see `recipe-06-business-context-doc-final-v2.md`).
+This holds "what does X mean" docs. One file per concept. Each follows the business context template (see `recipe-06-business-context-doc.md`).
 
 The `context/README.md` is a routing table:
 
@@ -105,7 +105,7 @@ The `context/README.md` is a routing table:
 
 ## Step 6 - The workflows/ folder
 
-This holds "how do we do X" docs. One file per workflow. Each follows the workflow template (see `recipe-05-workflow-doc-final-v2.md`).
+This holds "how do we do X" docs. One file per workflow. Each follows the workflow template (see `recipe-05-workflow-doc.md`).
 
 The `workflows/README.md` is a routing table from trigger phrases to workflow docs.
 

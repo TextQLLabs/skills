@@ -40,16 +40,16 @@ Before we write anything, help me scope today's session. Walk me through this st
 
 | Recipe | When to use |
 |---|---|
-| `recipe-01-nav-tables-final-v2.md` | After 3-4 slices exist; builds the master nav |
-| `recipe-02-folder-structure-final-v2.md` | When flat layout is getting messy and we need to decide on folders |
-| `recipe-03-database-or-data-source-final-v2.md` | Modeling a database into objects / metrics / .tql queries |
-| `recipe-04-api-integration-final-v2.md` | Documenting an external API integration |
-| `recipe-05-workflow-doc-final-v2.md` | A repeated multi-step process |
-| `recipe-06-business-context-doc-final-v2.md` | Defining a term, stage, role, or domain concept |
-| `recipe-07-personal-context-final-v2.md` | Building or updating a per-user preference file |
-| `recipe-08-team-or-functional-area-final-v2.md` | The hub for a whole team's content |
-| `recipe-09-playbook-or-dashboard-final-v2.md` | A scheduled report or dashboard |
-| `recipe-10-file-anatomy-template-final-v2.md` | Reference for the inner structure of any doc |
+| `recipe-01-nav-tables.md` | After 3-4 slices exist; builds the master nav |
+| `recipe-02-folder-structure.md` | When flat layout is getting messy and we need to decide on folders |
+| `recipe-03-database-or-data-source.md` | Modeling a database into objects / metrics / .tql queries |
+| `recipe-04-api-integration.md` | Documenting an external API integration |
+| `recipe-05-workflow-doc.md` | A repeated multi-step process |
+| `recipe-06-business-context-doc.md` | Defining a term, stage, role, or domain concept |
+| `recipe-07-personal-context.md` | Building or updating a per-user preference file |
+| `recipe-08-team-or-functional-area.md` | The hub for a whole team's content |
+| `recipe-09-playbook-or-dashboard.md` | A scheduled report or dashboard |
+| `recipe-10-file-anatomy-template.md` | Reference for the inner structure of any doc |
 
 **Step 6 - Set expectations.** Before we end this conversation, summarize:
 - The slice we picked for today
