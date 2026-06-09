@@ -25,6 +25,42 @@ Because everything lives in files and folders, Ana navigates it three ways: by k
 
 ---
 
+## The method: principles, tracks, and inputs
+
+Five principles underpin everything in this kit. (The three rules further down are how you *operationalize* them.)
+
+1. **Just files.** Definitions, SQL, notes, and rules live in one versioned tree - portable, diff-able, yours. No black-box compiler.
+2. **Locality of behavior.** You understand a metric by reading its file and the few it imports. `.tql` renders inspectable, warehouse-native SQL.
+3. **Governed by default.** Changes are proposed -> diffed -> reviewed -> approved -> audited, like software.
+4. **Ana does the heavy lifting.** Ana inspects the `.tql`, renders the SQL, executes it, and prefers a governed surface over ad-hoc SQL.
+5. **Discovery first.** Build from what's actually in the schema and the documents, not from assumptions.
+
+### Three ways to start
+
+- **From a prebuilt domain template** - fastest, if one fits your domain (e.g. healthcare/life-sciences, financial services). Connect it, validate against your schema, adapt. Run `recipes/recipe-11-start-from-domain-template.md`.
+- **From a database** (discovery-first). Connect it; Ana profiles the schema and drafts the first objects and metrics. Run `recipes/recipe-03-database-or-data-source.md`.
+- **From a pile of documents** (document-first). SOPs, metric docs, transcripts, policies - Ana reads them and proposes the model, then you slice it with `recipe-05` / `recipe-06`.
+
+Then, on any path: **validate** (`recipe-12-validate-with-golden-queries.md`), **govern** (`recipe-13-role-based-access.md`), and **maintain** (PRs - see the end of this guide).
+
+### Where each kind of input lands
+
+Real organizations have messy inputs. Each kind has a home in the ontology:
+
+| Input | Lands as |
+|---|---|
+| Business docs (SOPs, policies, glossaries) | `.md` context + canonical definitions (`recipe-06`) |
+| Metrics documentation | governed `.tql` surfaces + a definition note (`recipe-03`/`recipe-06`) |
+| Database + data dictionaries | schema backings + objects + table docs (`recipe-03`) |
+| Process-flow diagrams | objects + relationships + a workflow doc (`recipe-05`) |
+| Call transcripts / unstructured text | terminology, intents, entities -> glossary + definitions |
+| Golden datasets | golden-query tests (`recipe-12`) |
+| Access / sensitive policies | role-based access + governed notes (`recipe-13`) |
+
+> **Worked example.** For a full before/after - a pile of mixed inputs turned into a built ontology - see the `example-scenario/` in the ontology-workshop-guide: https://github.com/TextQLLabs/ontology-workshop-guide/tree/main/example-scenario
+
+---
+
 ## How this kit is organized
 
 ```

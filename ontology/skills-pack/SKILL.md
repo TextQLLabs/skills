@@ -54,6 +54,8 @@ grows continuously — you never start over).
   **golden-query validation (12)**, **role-based access (13)**.
 - `templates/` — skeleton docs the recipes generate from.
 - **Domain templates** (separate repos, Path 1) — prebuilt, validated starting points.
+- **Worked example** — a full mixed-inputs → built-ontology walkthrough lives in the
+  ontology-workshop-guide: https://github.com/TextQLLabs/ontology-workshop-guide/tree/main/example-scenario
 
 ## When NOT to start from scratch
 If a domain template fits (Path 1), use it — it's already built and validated, and you adapt rather
