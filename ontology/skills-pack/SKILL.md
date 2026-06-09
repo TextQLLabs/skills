@@ -19,6 +19,8 @@ at the customer's data, and adapt. Hours, not weeks — and already validated.
   PMPM, readmission, prevalence, HCC/RAF, HEDIS; ICD-10 / CCSR / CMS-HCC terminology).
 - More domains coming. (Each domain starter has its own `SKILL.md` so it's discoverable here.)
 
+Run `recipes/recipe-11-start-from-domain-template.md` to do this end to end (connect → validate → adapt).
+
 **2. Net-new domain, building from scratch? Use the recipes.** Drop a recipe into Ana's chat and it
 asks 3–7 scoping questions, drafts files, and opens a PR. Start with
 `00-START-HERE-ontology-building-guide.md`, then `recipes/recipe-00-scoping-conversation.md`, and
@@ -30,8 +32,9 @@ build one slice (20–30 min) at a time.
 - **Have a pile of documents** (SOPs, metric docs, transcripts, policies) → document-first: Ana reads
   them and proposes the model, narrating where each input lands.
 
-Then, regardless of path: **validate** (pin golden-query values, alert on drift), **govern**
-(role-based access / PHI gating), and **maintain** (every change is a reviewable PR; the ontology
+Then, regardless of path: **validate** (`recipes/recipe-12-validate-with-golden-queries.md` — pin
+known-correct values, alert on drift), **govern** (`recipes/recipe-13-role-based-access.md` —
+per-role surfaces / PHI gating), and **maintain** (every change is a reviewable PR; the ontology
 grows continuously — you never start over).
 
 ## Core principles (every path)
@@ -45,8 +48,10 @@ grows continuously — you never start over).
 
 ## What's in this pack
 - `00-START-HERE-ontology-building-guide.md` — the from-scratch method and the three rules above.
-- `recipes/` — 10 interactive, drop-into-chat sessions (data source, API, workflow, business
-  definition, personal context, team area, playbook/dashboard, nav tables, folder structure).
+- `recipes/` — interactive, drop-into-chat sessions: scoping, nav tables, folder structure, data
+  source, API, workflow, business definition, personal context, team area, playbook/dashboard,
+  plus the folded-in workshop assets — **start-from-domain-template (11)**,
+  **golden-query validation (12)**, **role-based access (13)**.
 - `templates/` — skeleton docs the recipes generate from.
 - **Domain templates** (separate repos, Path 1) — prebuilt, validated starting points.
 
