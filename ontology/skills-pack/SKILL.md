@@ -17,7 +17,10 @@ terminology/code-set crosswalks, governance, and validated golden queries; you c
 at the customer's data, and adapt. Hours, not weeks — and already validated.
 - Healthcare & life sciences → **`TextQLLabs/ontology-healthcare-starter`** (claims/clinical:
   PMPM, readmission, prevalence, HCC/RAF, HEDIS; ICD-10 / CCSR / CMS-HCC terminology).
-- More domains coming. (Each domain starter has its own `SKILL.md` so it's discoverable here.)
+- Financial services (banking / payments / lending) → **`TextQLLabs/ontology-finserv-starter`**
+  (deposits, NIM, delinquency, charge-offs, fraud; MCC / NAICS classification).
+- See **`DOMAINS.md`** for the full catalog (verticals + enterprise functions) and per-domain status.
+  Each domain starter has its own `SKILL.md` so it's discoverable here.
 
 Run `recipes/recipe-11-start-from-domain-template.md` to do this end to end (connect → validate → adapt).
 
@@ -53,7 +56,7 @@ grows continuously — you never start over).
   plus the folded-in workshop assets — **start-from-domain-template (11)**,
   **golden-query validation (12)**, **role-based access (13)**.
 - `templates/` — skeleton docs the recipes generate from.
-- **Domain templates** (separate repos, Path 1) — prebuilt, validated starting points.
+- **Domain templates** (separate repos, Path 1) — prebuilt starting points; catalog + status in `DOMAINS.md`.
 - **Worked example** — a full mixed-inputs → built-ontology walkthrough lives in the
   ontology-workshop-guide: https://github.com/TextQLLabs/ontology-workshop-guide/tree/main/example-scenario
 
