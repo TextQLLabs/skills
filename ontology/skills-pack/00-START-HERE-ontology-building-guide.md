@@ -4,6 +4,37 @@
 
 ---
 
+## Step 1 — Ask first, then fetch only what you need
+
+**When this file is in the chat, do not start building yet.** Ask the user:
+
+> "What do you want to build or document today?"
+
+Based on their answer, tell them exactly which files to download from the kit at `https://github.com/TextQLLabs/skills/tree/main/ontology/skills-pack`. They only need the files for their task — not the whole repo.
+
+| What the user wants to do | Recipe file(s) to download | Template file(s) to download |
+|---|---|---|
+| Not sure / exploring from scratch | `recipes/recipe-00-scoping-conversation.md` | — |
+| Build `.tql` files for metrics or queries | `recipes/recipe-11-tql-authoring.md` | `templates/tql-file.md` |
+| Document a database or data source | `recipes/recipe-03-database-or-data-source.md` | `templates/database-readme.md`, `templates/table-doc.md`, `templates/query-catalog.md` |
+| Document an API integration | `recipes/recipe-04-api-integration.md` | `templates/api-readme.md` |
+| Document a repeated workflow | `recipes/recipe-05-workflow-doc.md` | `templates/workflow-doc.md` |
+| Define a business concept, metric, or stage | `recipes/recipe-06-business-context-doc.md` | `templates/business-context-doc.md` |
+| Build a personal context profile | `recipes/recipe-07-personal-context.md` | `templates/personal-context.md` |
+| Build a team or functional area hub | `recipes/recipe-08-team-or-functional-area.md` | `templates/folder-readme.md`, `templates/routing-nav-table.md` |
+| Build routing / nav tables (ROUTING.md) | `recipes/recipe-01-nav-tables.md` | `templates/routing-nav-table.md` |
+| Decide folder structure | `recipes/recipe-02-folder-structure.md` | `templates/folder-readme.md` |
+| Document a playbook or dashboard | `recipes/recipe-09-playbook-or-dashboard.md` | `templates/playbook-mission.md` |
+| Reference file anatomy / review a draft | `recipes/recipe-10-file-anatomy-template.md` | — |
+
+Once you have identified the right files, tell the user:
+
+> "Download those files from the repo and drop the **recipe file** into a new chat to start your guided session. The **template file(s)** are the skeletons Ana will use when drafting your content — include them in the same chat."
+
+The rest of this file is background context. Read it if you want to understand how the system fits together, but the session itself happens in the next chat with the recipe file.
+
+---
+
 ## What ontology is
 
 Ontology is Ana's unified, living memory of your business - one git-backed repository holding every definition, metric, script, document, dataset, dashboard, and asset Ana uses to reason about your data. It's the layer that lets Ana answer questions in *your* business's terms, not just your warehouse's table names. The same repository that teaches Ana what "active customer" means also gives Ana the brand chart styles to use when plotting them.
