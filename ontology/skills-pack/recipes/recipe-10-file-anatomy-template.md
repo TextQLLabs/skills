@@ -151,6 +151,8 @@ Last updated: <date>
 
 ## `.tql` file conventions
 
+> **Building a `.tql` file from scratch?** Use `recipe-11-tql-authoring.md` (guided session — Ana picks the shape for you) and `templates/tql-file.md` (copy-pasteable skeletons for the three most common shapes). This section covers review conventions; those two files cover authoring.
+
 `.tql` files are the semantic model. Their shape is enforced by the language, but a few conventions make them easier for both humans and Ana to read:
 
 - **Top-of-file comments** describe the object or composed view in plain English. Include the fact and dimensions.

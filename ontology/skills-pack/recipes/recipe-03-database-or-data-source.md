@@ -111,6 +111,8 @@ For each:
 
 `.tql` files compile to native warehouse SQL. They're how you stop Ana from writing fresh SQL and getting it wrong. Every time a question matches a canonical `.tql`, Ana should use it.
 
+> **New to `.tql`?** Drop `recipe-11-tql-authoring.md` into a new chat — it runs a guided session for each file and picks the right shape for you. `templates/tql-file.md` has copy-pasteable skeletons for the three most common shapes (plain query, composed view, `_defs` fragment).
+
 ## Step 9 - Folder layout
 
 Recommend this structure (adapt to my conventions):

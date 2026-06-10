@@ -83,6 +83,7 @@ Walk me through the rendered SQL in plain language - I should be able to confirm
 
 - Add a `-- See also:` block linking related `.tql` files and a plain-English `.md` note for any metric (business meaning, exclusions, time grain). The `.tql` and the `.md` should point at each other.
 - Add a routing row in the relevant `ROUTING.md` / database `README.md` so the file is discoverable by the phrases I'd actually type.
+- **Wire up the auto-attached file.** Check whether the auto-attached file for this scope (the `ROUTING.md` or `Ana.md` that rides along in every relevant chat) already has an entry pointing to this routing file. If not, add one. A `.tql` file that lives behind two levels of routing is only reachable if every link in the chain is wired — if the auto-attached file doesn't reference the routing file, queries that should find this `.tql` never will. The entry can be a single row: `"<trigger phrase for this metric/query>" -> <path/to/ROUTING.md or database README>`.
 - Offer to capture anything I got wrong or surprising as a gotcha note.
 
 # Condensed syntax reference
