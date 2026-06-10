@@ -12,7 +12,7 @@ Ontology used to be two separate systems: a semantic layer for structured modeli
 
 The ontology holds whatever Ana might need:
 
-- **Semantic models in `.tql`** - TextQL's SQL-native modeling language for objects, attributes, links between objects, metric definitions, and composed query views. Compiles to warehouse-native SQL.
+- **Semantic models in `.tql`** - TextQL's SQL-native modeling language for objects, attributes, links between objects, metric definitions, and composed query views. Compiles to warehouse-native SQL. (`recipe-11-tql-authoring.md` teaches the syntax with copy-pasteable templates (condensed from the official [.tql Manual](https://docs.textql.com/core/ontology/tql-reference), which is the source of truth); `recipe-03` covers what to model.)
 - **Unstructured context in `.md`** - canonical definitions, workflow checklists, business rules, role descriptions, meeting notes, gotchas, conventions, and anything else that won't fit cleanly in code.
 - **Code and scripts in `.py`** - dashboard logic, custom metric implementations, reusable skills.
 - **Data files in `.csv`, `.tsv`, `.xlsx`, `.parquet`** - static reference data, exports, snapshots, forecast inputs.
@@ -41,6 +41,7 @@ recipes/
   recipe-08-team-or-functional-area.md
   recipe-09-playbook-or-dashboard.md
   recipe-10-file-anatomy-template.md
+  recipe-11-tql-authoring.md               <- how to actually write .tql (syntax + templates)
 templates/
   folder-readme.md
   routing-nav-table.md
@@ -52,6 +53,7 @@ templates/
   business-context-doc.md
   personal-context.md
   playbook-mission.md
+  tql-file.md                              <- .tql skeletons (query / composed view / _defs)
 ```
 
 **Recipes** are prompts. You drop the contents of one into chat and Ana runs a guided session for that slice of the ontology.
@@ -102,6 +104,12 @@ You don't need to format anything. Raw SQL, Notion links, Slack exports, screens
 - The 3-5 things people commonly get wrong about it
 - Examples and counterexamples
 
+**For a `.tql` authoring slice (recipe-11):**
+- The tables/columns the file will touch and what one row represents
+- The inputs the file should accept (which are required, which have defaults)
+- Whether the file needs conditional logic (optional joins, breakout dimensions) or is a single static SELECT
+- Access to the connector so the file can be tested end to end (inspect -> render -> execute)
+
 **For personal context (recipe-07):**
 - How you prefer responses (concise vs detailed, charts vs tables, with-SQL vs without)
 - Your common typos and shorthand (especially if you dictate)
@@ -120,6 +128,7 @@ Resist the urge to build everything at once. Pick one:
 | A workflow that gets explained over and over in Slack | `recipe-05-workflow-doc.md` for that workflow |
 | A term people argue over the definition of | `recipe-06-business-context-doc.md` for that term |
 | Nothing yet, just exploring | `recipe-00-scoping-conversation.md` |
+| A query you want to turn into a reusable, parameterized `.tql` | `recipe-11-tql-authoring.md` |
 
 Once 3-4 slices exist, build the **root routing file** (`recipe-01-nav-tables.md`). This is your repo's nav.
 
